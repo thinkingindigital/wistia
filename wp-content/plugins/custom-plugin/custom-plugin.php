@@ -7,7 +7,7 @@ Text Domain:  gg-plugin
 */
 
 add_action( 'wp_enqueue_scripts', function() {	
-	wp_register_script( 'sweetalert', plugin_dir_url(__FILE__).'assets/js/sweetalert.min.js', array(), '1.0', true );
+    wp_register_script( 'sweetalert', plugin_dir_url(__FILE__).'assets/js/sweetalert.min.js', array(), '1.0', true );
     wp_register_script( 'custom-js', plugin_dir_url(__FILE__).'assets/js/custom.js', array('jquery', 'sweetalert'), '0.1', true );
     wp_enqueue_script( 'sweetalert' );
     wp_enqueue_script( 'custom-js' );

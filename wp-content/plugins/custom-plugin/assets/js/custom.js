@@ -3,7 +3,6 @@ jQuery(function() {
 
     window._wq = window._wq || [];
     _wq.push({ id: 'yuh3trwkkl', onReady: function(video) {
-        //console.log("I got a handle to the video!", video);
 
         video.bind("crosstime", 60, function() {
             video.pause();
